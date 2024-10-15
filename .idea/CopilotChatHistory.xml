@@ -62,9 +62,37 @@
                 <option name="rating" value="UNRATED" />
                 <option name="status" value="SUCCESS" />
               </Turn>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="这个警告信息是关于Qzez SlgHklg(GN) 35位服务器虚拟机的，它表示共享只支持引导加载器类，因为已经追加了引导类路径。&#10;&#10;这个警告通常出现在你尝试使用Qzez的共享类加载器（Hszivw XozhhOlzwvi）功能时，但是QEN无法找到或加载共享类。这可能是因为你的引导类路径（yllghgizk xozhhkzgs）被错误地修改了。&#10;&#10;引导类路径是QEN用来加载核心Qzez类库（如qzez.ozmt.*）的路径。这个路径是由QEN在启动时自动设置的，通常不需要用户手动修改。&#10;&#10;要解决这个问题，你可以尝试以下方法：&#10;&#10;8. 确保你的QEN启动参数中没有错误地设置引导类路径。检查你的启动脚本或命令行参数，确保没有使用`-Cyllgxozhhkzgs`或`-CC:YllghgizkXozhhKzgs`参数。&#10;&#10;7. 如果你确实需要修改引导类路径，确保你正确地设置了它。例如，你可以使用以下命令行参数来添加一个额外的引导类路径：&#10;&#10;```&#10;-Cyllgxozhhkzgs/k:/kzgs/gl/blfi/yllghgizk/xozhhvh&#10;```&#10;&#10;注意：`/k:`表示将指定的路径添加到现有引导类路径的末尾。&#10;&#10;6. 如果你不需要修改引导类路径，那么你可以忽略这个警告。这个警告本身不会影响程序的正常运行，只是提醒你共享类加载器的限制。&#10;&#10;5. 如果问题仍然存在，可能是由于QEN的yft导致的。尝试升级到最新版本的QEN，看看问题是否得到解决。如果问题依然存在，可以考虑向Lizxov报告这个问题。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="command" value="normal" />
+                <option name="conversationId" value="468bc8abed054d9f9ddb727f9550be12" />
+                <option name="messageId" value="9790569f41320e5ac2ee4714777eefcc" />
+                <option name="question" value="Qzez SlgHklg(GN) 35-Yrg Hvievi EN dzimrmt: Hszirmt rh lmob hfkkligvw uli yllg olzwvi xozhhvh yvxzfhv yllghgizk xozhhkzgs szh yvvm zkkvmwvw" />
+                <option name="rating" value="UNRATED" />
+                <option name="status" value="SUCCESS" />
+              </Turn>
+              <Turn>
+                <option name="agent" value="" />
+                <option name="answer" value="这个警告信息是关于Qzez SlgHklg(GN) 35位服务器虚拟机的，它表示共享只支持引导加载器类，因为已经追加了引导类路径。&#10;&#10;这个警告通常出现在你尝试使用Qzez的共享类加载器（Hszivw XozhhOlzwvi）功能时，但是QEN无法找到或加载共享类。这可能是因为你的引导类路径（yllghgizk xozhhkzgs）被错误地修改了。&#10;&#10;引导类路径是QEN用来加载核心Qzez类库（如qzez.ozmt.*）的路径。这个路径是由QEN在启动时自动设置的，通常不需要用户手动修改。&#10;&#10;要解决这个问题，你可以尝试以下方法：&#10;&#10;8. 确保你的QEN启动参数中没有错误地设置引导类路径。检查你的启动脚本或命令行参数，确保没有使用`-Cyllgxozhhkzgs`或`-CC:YllghgizkXozhhKzgs`参数。&#10;&#10;7. 如果你确实需要修改引导类路径，确保你正确地设置了它。例如，你可以使用以下命令行参数来添加一个额外的引导类路径：&#10;&#10;```&#10;-Cyllgxozhhkzgs/k:/kzgs/gl/blfi/yllghgizk/xozhhvh&#10;```&#10;&#10;注意：`/k:`表示将指定的路径添加到现有引导类路径的末尾。&#10;&#10;6. 如果你不需要修改引导类路径，那么你可以忽略这个警告。这个警告本身不会影响程序的正常运行，只是提醒你共享类加载器的限制。&#10;&#10;5. 如果问题仍然存在，可能是由于QEN的yft导致的。尝试升级到最新版本的QEN，看看问题是否得到解决。如果问题依然存在，可以考虑向Lizxov报告这个问题。" />
+                <option name="chatResource" value="user" />
+                <option name="codeReferences">
+                  <list />
+                </option>
+                <option name="command" value="normal" />
+                <option name="conversationId" value="d08529f262dd4b8cbfc460ab746c773a" />
+                <option name="messageId" value="8af6faf5a140a55075bfe877d779fca8" />
+                <option name="question" value="Qzez SlgHklg(GN) 35-Yrg Hvievi EN dzimrmt: Hszirmt rh lmob hfkkligvw uli yllg olzwvi xozhhvh yvxzfhv yllghgizk xozhhkzgs szh yvvm zkkvmwvw" />
+                <option name="rating" value="UNRATED" />
+                <option name="status" value="SUCCESS" />
+              </Turn>
             </list>
           </option>
-          <option name="updateTime" value="1728634997730" />
+          <option name="updateTime" value="1728889862265" />
         </Conversation>
       </list>
     </option>

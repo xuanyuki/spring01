@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-aop-01" />
         <module name="spring-ioc-01" />
       </profile>
     </annotationProcessing>
@@ -21,6 +22,7 @@
       <module name="boot-01" options="-parameters" />
       <module name="boot-02" options="-parameters" />
       <module name="spring-01" options="-parameters" />
+      <module name="spring-aop-01" options="-parameters" />
       <module name="spring-ioc-01" options="-parameters" />
     </option>
   </component>
