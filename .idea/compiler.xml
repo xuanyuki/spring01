@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-aop-01" />
         <module name="spring-ioc-01" />
+        <module name="spring-tx-01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
