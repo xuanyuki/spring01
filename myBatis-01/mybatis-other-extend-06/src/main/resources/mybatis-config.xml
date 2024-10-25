@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 配置文件的根元素 -->
+<configuration>
+	
+	<settings>
+		<!--		日志输出-->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+		<!-- 开启数据库自动映射功能 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+		<!--开启resultMap自动嵌套映射-->
+		<setting name="autoMappingBehavior" value="FULL" />
+	</settings>
+	
+	<typeAliases>
+		<package name="com.xianyu.pojo" />
+	</typeAliases>
+	
+	<plugins>
+		<!--使用分页插件-->
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<property name="helpDialect" value="mysql" />
+		</plugin>
+	</plugins>
+	
+	<!-- 环境：配置mybatis的环境 -->
+	<environments default="development">
+		<!-- 环境变量：可以配置多个环境变量，比如使用多数据源时，就需要配置多个环境变量 -->
+		<environment id="development">
+			<!-- 事务管理器 -->
+			<transactionManager type="JDBC" />
+			<!-- 数据源 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.cj.jdbc.Driver" />
+				<!--设置允许多语句查询-->
+				<property name="url" value="jdbc:mysql://localhost:3306/java?allowMultiQueries=true" />
+				<property name="username" value="java" />
+				<property name="password" value="123456" />
+			</dataSource>
+		</environment>
+	</environments>
+	<!-- 映射器：指定映射文件或者映射类 -->
+	<mappers>
+		<!--批量指定mapper,需要mapper.xml与mapper文件名相同，需要打包到同一目录下，在资源目录创建对应路径文件夹即可-->
+		<package name="com.xianyu.mapper" />
+	</mappers>
+</configuration>

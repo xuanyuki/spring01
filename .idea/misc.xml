@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/spring-aop-01/pom.xml" />
         <option value="$PROJECT_DIR$/spring-ioc-01/pom.xml" />
         <option value="$PROJECT_DIR$/spring-tx-01/pom.xml" />
+        <option value="$PROJECT_DIR$/myBatis-01/pom.xml" />
+        <option value="$PROJECT_DIR$/myBatis-01/myBatis-base-02/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
