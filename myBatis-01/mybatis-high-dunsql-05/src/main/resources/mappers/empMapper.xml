@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xianyu.mapper.EmployeeMapper">
+	
+	<!--定义sql片段并引用-->
+	<sql id="selectSqlPer">
+		select * from employee
+	</sql>
+	<!--test写判断表达式，大于和小于可以使用&gt; &lt;替代-->
+	<select id="query" resultType="employee">
+		<include refid="selectSqlPer" />
+		<where>
+			<if test="name != null">
+				empName = #{name}
+			</if>
+			<if test="salary != null">
+				and empSalary = #{salary}
+			</if>
+		</where>
+	</select>
+	
+	<update id="updateById">
+		update employee
+		<set>
+			<if test="empName != null">
+				empName=#{empName},
+			</if>
+			<if test="empSalary">
+				empSalary=#{empSalary}
+			</if>
+		</set>
+		<where>
+			empId = #{empId}
+		</where>
+	</update>
+	
+	<!--
+	choose => switch
+	when => case
+	otherwise => default
+	-->
+	<select id="queryChoose" resultType="employee">
+		select * from employee
+		<where>
+			<choose>
+				<when test="name != null">
+					empName = #{name}
+				</when>
+				<when test=" salary != null">
+					empSalary = #{salary}
+				</when>
+				<otherwise>
+					1=1
+				</otherwise>
+			</choose>
+		</where>
+	</select>
+	
+	<!--collection 需要遍历的数据-->
+	<!--item 每一项-->
+	<!--separator 元素分隔符，最后一次遍历不会追加分隔符-->
+	<!--open 遍历前追加的字符串 -->
+	<!--close 遍历结束添加的字符串-->
+	<select id="queryBatch" resultType="employee">
+		select * from employee
+		<where>
+			empId in
+			<foreach collection="ids" item="id" separator="," open="(" close=")">
+				#{id}
+			</foreach>
+		</where>
+	</select>
+	
+	<delete id="deleteBatch">
+		delete from employee
+		<where>
+			empId in
+			<foreach collection="ids" item="id" separator="," open="(" close=")">
+				#{id}
+			</foreach>
+		</where>
+	</delete>
+	
+	<insert id="insertBatch">
+		insert into employee(empName,empSalary)
+		values
+		<foreach collection="employees" item="item" separator=",">
+			(#{item.empName},#{item.empSalary})
+		</foreach>
+	</insert>
+	
+	<update id="updateBatch">
+		<foreach collection="employees" item="emp">
+			update employee
+			set empName = #{emp.empName} , empSalary = #{emp.empSalary}
+			where empId = #{emp.empId};
+		</foreach>
+	</update>
+</mapper>

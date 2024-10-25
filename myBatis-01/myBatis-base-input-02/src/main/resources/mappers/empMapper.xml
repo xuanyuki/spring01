@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mapper.com.xianyu.EmployeeMapper">
+	<select id="queryById" resultType="com.pojo.com.xianyu.Employee">
+		select empId,empSalary,empName
+		from employee
+		where empid = #{id}
+	</select>
+	
+	<delete id="deleteById">
+		delete
+		from employee
+		where empid = #{id}
+	</delete>
+	
+	<select id="queryByName" resultType="com.pojo.com.xianyu.Employee">
+		select *
+		from employee
+		where empName = #{name}
+	</select>
+	
+	<insert id="insertEmployee">
+		insert into employee (empName, empSalary)
+		values (#{empName}, #{empSalary});
+	</insert>
+	
+	<select id="queryByNameAndSalary" resultType="com.pojo.com.xianyu.Employee">
+		select *
+		from employee
+		where empName = #{name}
+			and empSalary = #{salary}
+	</select>
+<!--	不指定@Param注解-->
+<!--	<select id="queryByNameAndSalary" resultType="com.pojo.com.xianyu.Employee">-->
+<!--		select *-->
+<!--		from employee-->
+<!--		where empName = #{arg0}-->
+<!--			and empSalary = #{arg1}-->
+<!--	</select>-->
+
+<!--	传入map，根据map中的key取值对应value-->
+	<insert id="addEmployee">
+		insert into employee (empName, empSalary)
+		values (#{empName}, #{empSalary});
+	</insert>
+</mapper>

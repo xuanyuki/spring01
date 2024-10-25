@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--在这里使用后，该接口不可重载-->
+<mapper namespace="com.mapper.com.xianyu.EmployeeMapper">
+
+<!--	只有查询有 resultType-->
+	<select id="queryById" resultType="com.pojo.com.xianyu.Employee">
+		select *
+		from employee
+		where empId = #{id}
+	</select>
+	
+	<delete id="deleteById">
+		delete from employee
+		where empId = #{id}
+	</delete>
+</mapper>
