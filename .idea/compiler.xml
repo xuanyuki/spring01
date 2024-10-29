@@ -10,28 +10,41 @@
         <module name="mybatis-high-multitable-04" />
         <module name="spring-tx-01" />
         <module name="mybatis-base-output-03" />
-        <module name="spring-aop-01" />
+        <module name="springmvc-base-output-03" />
         <module name="myBaits-base-01" />
+        <module name="springmvc-base-quick-01" />
         <module name="myBatis-base-input-02" />
         <module name="spring-ioc-01" />
         <module name="mybatis-high-dunsql-05" />
+        <module name="spring-aop-01" />
+        <module name="springmvc-base-restful-04" />
+        <module name="springmvc-base-input-02" />
         <module name="mybatis-other-extend-06" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="boot-01" target="17" />
-      <module name="boot-02" target="17" />
-      <module name="myBaits-base-01 (1)" target="17" />
-      <module name="spring-01" target="17" />
+      <module name="spring" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="boot-01" options="-parameters" />
-      <module name="boot-02" options="-parameters" />
-      <module name="spring-01" options="-parameters" />
+      <module name="myBaits-base-01" options="" />
+      <module name="myBatis-01" options="" />
+      <module name="myBatis-base-input-02" options="" />
+      <module name="mybatis-base-output-03" options="" />
+      <module name="mybatis-high-dunsql-05" options="" />
+      <module name="mybatis-high-multitable-04" options="" />
+      <module name="mybatis-other-extend-06" options="" />
+      <module name="spring" options="" />
       <module name="spring-aop-01" options="-parameters" />
       <module name="spring-ioc-01" options="-parameters" />
+      <module name="spring-tx-01" options="" />
+      <module name="springmvc-01" options="" />
+      <module name="springmvc-base-input-02" options="" />
+      <module name="springmvc-base-output-03" options="" />
+      <module name="springmvc-base-quick-01" options="" />
+      <module name="springmvc-base-restful-04" options="" />
     </option>
   </component>
 </project>
