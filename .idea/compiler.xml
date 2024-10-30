@@ -16,6 +16,7 @@
         <module name="myBatis-base-input-02" />
         <module name="spring-ioc-01" />
         <module name="mybatis-high-dunsql-05" />
+        <module name="springmvc-high-other-05" />
         <module name="spring-aop-01" />
         <module name="springmvc-base-restful-04" />
         <module name="springmvc-base-input-02" />
@@ -45,6 +46,7 @@
       <module name="springmvc-base-output-03" options="" />
       <module name="springmvc-base-quick-01" options="" />
       <module name="springmvc-base-restful-04" options="" />
+      <module name="springmvc-high-other-05" options="" />
     </option>
   </component>
 </project>
