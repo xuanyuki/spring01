@@ -1,0 +1,27 @@
+# 依赖
+- ## spring
+  - ### ioc/di
+    - spring-context 6.0.6
+    - jakarta.annotation-api 2.1.1
+  - ### aop
+    - spring-aop 6.0.6 
+    - spring-aspects 6.0.6
+  - ### tx
+    - spring-tx 6.0.6
+    - spring-jdbc 6.0.6
+- ## springmvc
+  - spring-webmvc 6.0.6
+  - jakarta.jakartaee-web-api 9.1.0
+  - jackson-databind 2.15.0
+  - hibernate-validator 8.0.0
+  - hibernate-validator-annotation-processor 8.0.0
+- ## mybatis
+  - mybatis 3.5.11
+  - mysql 8.0.25
+  - pagehelper 5.1.11
+- ## 整合环境
+  - spring-web 6.0.6
+  - mybatis-spring x.x
+  - 连接池 druid x
+  - lombok 1.18.26
+  - logback 1.2.3
