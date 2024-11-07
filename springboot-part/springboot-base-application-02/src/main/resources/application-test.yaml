@@ -1,0 +1,7 @@
+mykey:
+  user:
+    username: root
+    password: 123456
+    gfs:
+      - 王五
+      - 赵六
